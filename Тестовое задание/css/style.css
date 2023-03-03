@@ -1,0 +1,399 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f3f2f2;
+    margin: 0 auto;
+    max-width: 1920px;
+    font-family: 'Poppins';
+}
+
+/* Header */
+
+.page-header{
+    width: 1920px;
+    color:#FFFFFF;
+    background: linear-gradient(0deg, #071D68 0%, #0B4BEC 100%), #FFFFFF;
+}
+
+.navigation{
+    display: flex;
+    height: 120px;
+    width: 1170px;
+    padding: 0 375px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(7, 29, 104,0.1);
+}
+
+.logo{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-text{
+    width: 150px;
+    height: 46px;
+    line-height: 26px;
+}
+
+.logo-text-1{
+    font-weight: 600;
+    font-size: 18px;
+    text-shadow: 1.5px 2.598px 3px rgb( 30, 28, 28 );
+}  
+
+.logo-text-2{
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.navigation-list{
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+
+.navigation-item{
+    font-weight: 600;
+}
+
+.navigation-link{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navigation-btn{
+    background-color: #FFFFFF;
+    width: 125px;
+    height: 30px;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color:#0B4BEC;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+/* Apply Now */
+
+
+.banner{
+    color:#FFFFFF;
+    height: 1040px;
+    text-align: center;
+    width: 1920px;
+}
+
+.banner-text{
+    padding-top: 200px;
+    margin-bottom: 35px;
+
+    color:#FFFFFF;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 26px;
+}
+
+.after-banner-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 60px;
+}
+
+.banner-btn{
+    width: 180px;
+    height: 45px;
+    font-weight: 600;
+    color:#0B4BEC;
+    border:none;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.card{
+    margin-top: 92px;
+    margin-left: 675px;
+    position: absolute;
+    z-index: 1;
+}  
+
+/* PROCESS */
+
+.process{
+    width: 1180px;
+    padding: 0 370px;
+    margin-top: 142px;
+    margin-bottom: 244px;
+    text-align: center;
+}
+
+.process-head{
+    width: 384px;
+    text-align: left;
+}
+
+.section-text{
+    font-size: 24px;
+    line-height: 42px;
+    text-transform: uppercase;
+}
+
+.section-name{
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 136px;
+    text-transform: uppercase;
+}
+
+.list-conditions{
+    display: flex;
+    gap: 30px;
+}
+
+.conditions-item{
+    width: 370px;
+    height: 345px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(4, 4, 4, 0.1);
+}
+
+.conditions-item:hover{
+    transform: scale(1.1);
+    background: linear-gradient(20.69deg, #071D68 8.53%, #0B4BEC 91.47%), #FFFFFF;
+    transition: 0.5s;
+    border: none;
+}
+
+.conditions-item img{
+    margin-top: 50px;
+}
+
+.head-conditions-item{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 42px;
+    margin-bottom: 5px;
+}
+
+.text-conditions-item{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+
+/* SERVICE*/
+
+
+.service{
+    width:1772px;
+    padding: 0 74px;
+    padding-top: 138px;
+    padding-bottom: 150px;
+    background-color: #FFFFFF;
+}
+
+.service-head{
+    width:384px;
+    margin-left: 301px;
+}
+
+.service .section-name {
+    margin:0;
+    margin-bottom: 66px;
+}
+.service .section-text {
+    margin:0;
+}
+
+#slider_box>ul>li {
+    float: left;
+    display: block;
+    width: 270px;
+    height: 350px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(4, 4, 4, 0.3);
+    font-size: 20px;
+    line-height: 42px;
+}
+
+#slider_box>ul {
+    display: flex;
+    margin: 0 auto;
+}
+
+#slider_box {
+    overflow: hidden;
+    position: relative;
+    left: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#left_nav {
+    float: left;
+    background-image: url(../img/right.png);
+    transform: rotate(180deg);
+    margin-right: 50px;
+}
+
+#nav_slider > div {
+    width: 32px;
+    height: 20px;
+}
+
+#right_nav {
+    float: right;
+    background-image: url(../img/right.png);
+}
+
+#nav_slider {
+    overflow: hidden;
+    position: relative;
+    top: -180px;
+}
+
+#slider {
+    width: 1330px;
+    margin: 0 auto;
+}
+
+/* COUNTDOWN*/
+
+
+.countdown{
+    background: linear-gradient(5.32deg, #071D68 3.86%, #0B4BEC 96.14%), #CFCFCF;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    z-index: 1;
+    height: 550px;
+    color:#FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1920px;
+}
+
+.countdown-list{
+    display: flex;
+    gap:136px;
+    flex-wrap: wrap;
+}
+
+.countdown-items{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.countdown-item-quantity{
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.countdown-item-text{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+
+/* MESSAGE*/
+
+
+.message{
+    width:1172px;
+    height: 290px;
+    padding: 0 374px;
+    padding-top: 137px;
+    padding-bottom: 147px;
+    background-color: #FFFFFF;
+}
+
+.message .section-name {
+    margin-bottom: 50px;
+}
+
+.form{
+    display: flex;
+    flex-wrap: no-wrap;
+}
+
+.form-text{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+
+.object-form-text{
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    color: rgb( 128, 128, 128 );
+    border: 1px solid rgb( 128, 128, 128,0.2 );
+    width:530px;
+    height: 50px;
+    padding-left:20px;
+    font-family: 'Raleway';
+}
+
+.form-message{
+    width: 530px;
+}
+
+.textarea{
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    color: rgb( 128, 128, 128 );
+    border: 1px solid rgb( 128, 128, 128,0.2 );
+    width:530px;
+    height: 130px;
+    resize: none;
+    margin-bottom: 30px;
+    font-family: 'Raleway';
+    padding-left: 20px;
+    padding-top: 14px;
+} 
+
+.message-form-btn{
+    width: 550px;
+    height: 50px;
+    background: #0B4BEC;
+    border: none;
+    color:#FFFFFF;
+    font-family: 'Raleway';
+    cursor: pointer;
+}
+
+
+
+/* FOOTER */
+
+
+
+.page-footer{
+    background: linear-gradient(2.42deg, #071D68 1.94%, #0B4BEC 98.06%), #0B4BEC;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    height: 130px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 300;
+    width: 1920px;
+}
+
+.page-footer p{
+    padding-top: 34px;
+}

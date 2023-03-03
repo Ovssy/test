@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>DIGITAL BANKING</title>
+</head>
+<body>
+    <header class="page-header">
+        <nav class="navigation">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+                <div class="logo-text">
+                    <span class="logo-text-1">Digital Banking</span><br>
+                    <span class="logo-text-2">Be Safe Banking</span>
+                </div>
+            </div>
+            <ul class="navigation-list">
+                <li class="navigation-item"><a class="navigation-link" href="#">CARDS</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="#">SERVICE</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="#">BANKING</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="#">FAQ</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="#">CONTACT</a></li>
+            </ul>
+            <button class="navigation-btn">Create Account</button>
+        </nav>
+        <section class="banner">
+            <p class="banner-text">To Make Your Life Easier Take a Card</p>
+            <p class="after-banner-text">There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered There are many variations of passages of
+                Lorem Ipsum<br> randomised words which don't look even slightly believable.
+            </p>
+            <button class="banner-btn">APPLY NOW</button>
+            <div class="card">
+                <img src="img/credit-card.png" alt="">
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="process">
+            <div class="process-head">
+                <p class="section-text">EASY PROCESS</p>
+                <h2 class="section-name ">TO GET A CREDIT CARD</h2>
+            </div>
+            <ul class="list-conditions">
+                <li class="conditions-item">
+                    <img class="" src="img/application.png" alt="">
+                    <h3 class="head-conditions-item">Online Application</h3>
+                    <p class="text-conditions-item">Information in the database is published in two formats.
+                        It is available in PDF comparison<br> according to type of credit card.
+                    </p>
+                </li>
+                <li class="conditions-item">
+                    <img src="img/approval.png" alt="">
+                    <h3 class="head-conditions-item">Get Approval</h3>
+                    <p class="text-conditions-item">Information in the database is published in two formats.
+                        It is available in PDF comparison<br> according to type of credit card.
+                    </p>
+                </li>
+                <li class="conditions-item">
+                    <img src="img/get_card.png" alt="">
+                    <h3 class="head-conditions-item">Get Your Card</h3>
+                    <p class="text-conditions-item">Information in the database is published in two formats.
+                        It is available in PDF comparison<br> according to type of credit card.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="service">
+            <div class="service-head">
+                <p class="section-text">useful service avaible</p>
+                <h2 class="section-name">Service of Credit Card</h2>
+            </div>
+            <div id="slider">
+                <div id="slider_box">
+                    <ul>
+                        <li>
+                            <img src="img/sports-ticket.png" alt="">
+                            <p>Sports Ticket</p>
+                        </li>
+                        <li>
+                            <img src="img/balance-transform.png" alt="">
+                            <p>Balance transform</p>
+                        </li>
+                        <li>
+                            <img src="img/internet-banking.png" alt="">
+                            <p>Internet Banking</p>
+                        </li>
+                        <li>
+                            <img src="img/Buying-payment.png" alt="">
+                            <p>Buying Payment</p>
+                        </li>
+                        <li>
+                            <img src="img/buy-air-ticket.png" alt="">
+                            <p>Buy Air Ticket</p>
+                        </li>
+                        <li>
+                            <img src="img/Mobile-recharge.png" alt="">
+                            <p>Mobile Recharge</p>
+                        </li>
+                    </ul>
+                </div>
+               <div id="nav_slider">
+                   <div id="left_nav"></div>
+                   <div id="right_nav"></div>
+               </div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+            <script>
+                function Slider(width_li,margin_right_li,col_view_img){
+                    var step=width_li+margin_right_li,
+                        slider_box_with=col_view_img*step-margin_right_li,
+                        $col_img=$("#slider_box>ul>li").length,
+                        col_main_left=0,
+                        max_col_main_left=$col_img*step;
+                    $("#slider_box").width(slider_box_with);
+                    $("#slider_box>ul>li").width(width_li).css("margin-right",margin_right_li);
+                    $("#left_nav").click(function(){
+                        if(-col_main_left==max_col_main_left-col_view_img*step){
+                            col_main_left=0;
+                        } else{
+                            col_main_left=col_main_left-step;
+                        }
+                        $("#slider_box>ul").css("margin-left",col_main_left+"px");
+                    });
+                    $("#right_nav").click(function(){
+                        if(col_main_left==0){
+                            col_main_left=-max_col_main_left+col_view_img*step;
+                        } else{
+                            col_main_left=col_main_left+step;
+                        }
+                        $("#slider_box>ul").css("margin-left",col_main_left+"px");
+                    });
+                }
+                $(Slider(270,30,4));
+            </script>
+        </section>
+        <section class="countdown">
+            <ul class="countdown-list">
+                <li class="countdown-items">
+                    <img src="img/million.png" alt="">
+                    <p class="countdown-item-quantity">725M</p>
+                    <p class="countdown-item-text">Happy User</p>
+                </li>
+                <li class="countdown-items">
+                    <img src="img/user-like.png" alt="">
+                    <p class="countdown-item-quantity">700M</p>
+                    <p class="countdown-item-text">User Apprication</p>
+                </li>
+                <li class="countdown-items">
+                    <img src="img/korzina.png" alt="">
+                    <p class="countdown-item-quantity">10M+</p>
+                    <p class="countdown-item-text">Payment Service</p>
+                </li>
+                <li class="countdown-items">
+                    <img src="img/raketa.png" alt="">
+                    <p class="countdown-item-quantity">600M</p>
+                    <p class="countdown-item-text">User Feedback</p>
+                </li>
+            </ul>
+        </section>
+        <section class="message">
+            <h2 class="section-name">Your Message</h2>
+            <form class="form" action="" method="post">
+                <div class="form-text">
+                    <input class="object-form-text" type="text" placeholder="Your Name">
+                    <input class="object-form-text" type="text" placeholder="Email Address">
+                    <input class="object-form-text" type="text" placeholder="Subject">
+                </div>
+                <div class="form-message">
+                    <textarea class="textarea" name="message"placeholder="Message"></textarea>
+                    <input class="message-form-btn" type="submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <p>Copyright @ Digital Marketing. AllRight Reseverd</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,190 @@
+@media only screen and (max-width: 500px){
+
+body{
+    width: 375px;
+    padding:0 14px;
+    margin:0 auto
+}
+
+.page-header{
+    width: 100%;
+}
+
+.navigation{
+    height: 50px;
+    width: 347px;
+    padding:0 14px;
+    margin: 0 auto;
+}
+
+.navigation-list{
+    display: none;
+}
+
+.navigation-btn{
+    width:80px;
+    height: 30px;
+    font-size: 8px;
+}
+
+.logo img{
+    display: none;
+}
+
+.logo-text{
+    width:100px;
+    line-height: 14px;
+    margin-top: 15px;
+}
+
+
+.logo-text-1{
+    font-weight: 600;
+    font-size: 12px;
+    text-shadow: 1.5px 2.598px 3px rgb( 30, 28, 28 );
+}  
+
+.logo-text-2{
+    font-weight: 300;
+    font-size: 8px;
+}
+
+.banner{
+    width:347px;
+    height: 520px;
+}
+
+.banner .card{
+    display: none;
+}
+
+.banner-text{
+    font-size: 24px;
+    padding-top: 100px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+}
+
+.after-banner-text{
+    font-weight: 400;
+    font-size: 12px;
+    width: 318px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.process{
+    width:347px;
+    padding: 0 14px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 120px;
+}
+.process-head{
+    width:318px;
+}
+.list-conditions{
+    flex-wrap: wrap;
+}
+
+
+
+.section-name{
+    margin-bottom: 68px;
+}
+
+.service{
+    width: 347px;
+    padding: 0 14px;
+    padding-top: 69px;
+    padding-bottom: 75px;
+}
+
+.service-head{
+    width:318px;
+    margin: 0 auto;
+}
+
+#slider_box>ul>li{
+    width: 70px;
+    height: 150px;
+    font-size: 10px;
+    line-height: 18px;
+}
+
+#slider_box>ul{
+    flex-wrap: wrap;
+}
+#slider_box{
+    margin: 0;
+}
+
+#slider {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#nav-slider{
+    display: none;
+}
+
+.countdown{
+    width: 347px;
+    padding: 0 14px;
+    height: 1500px;
+}
+
+.countdown{
+    gap:15px;
+}
+
+.countdown-items{
+    margin: 0 auto;
+}
+
+.message{
+    width: 347px;
+    height: 500px;
+    padding: 0 14px;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 72px;
+}
+
+.form{
+    flex-wrap: wrap;
+    gap:10px;
+}
+.form-text{
+    gap:10px;
+}
+
+.object-form-text{
+    width:318px;
+    height: 30px;
+}
+
+.form-message{
+    width: 318px;
+}
+
+.textarea{
+    width:318px;
+}
+.message-form-btn{
+    width: 340px;
+    height: 30px;
+}
+
+.page-footer{
+    width: 347px;
+    height: 65px;
+    padding: 0 14px;
+}
+
+.page-footer p{
+    padding-top: 17px;
+    font-size: 10px;
+}
+
+}
